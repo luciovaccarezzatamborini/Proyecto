@@ -1,0 +1,376 @@
+body{
+    background: rgb(22, 21, 21);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; 
+}
+
+
+.header{
+    background-color: var(--color-transparent-dark-1);
+    background: rgb(14, 14, 14);
+    grid-column: span 2;
+    height: var(--heightHeader);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 99%;
+    height: 110px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    padding: 0 0.5rem;
+    -webkit-box-shadow: 0 0 10px var(--color-transparent-dark);
+    box-shadow: 0 0 10px var(--color-transparent-dark);
+    z-index: 4;
+}
+.main-title{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 0.5rem
+}
+.main-title label{
+    color: white;
+    font-size: 40px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header_btn{
+    padding: 1rem;
+    height: 100%;
+    border-radius: 20px;
+    background-color: rgb(3, 100, 190);;
+}
+.header_btn:hover{
+    color: lightblue;
+    transition: 3s;
+}
+.header_btn a{
+    color:white;
+}
+.header_btn a:hover{
+    color:rgb(0, 0, 0);
+    transition:.3s;
+}
+
+.menu {
+    position: relative;
+    width: 10%;
+    height: 100%;
+}
+.menu_wrapper {
+        background-color: var(--color-transparent-dark-1);
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: calc(100vh - var(--heightHeader));
+        width: var(--widthSilebar);
+        top: 0;
+        left: 0;
+        border: 2px solid black;
+        overflow-x: hidden;
+}
+.menu_item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #fff;
+    min-height: 3.5rem;
+    width: 100%;
+    padding: 0;
+    margin: 0.2rem 0;
+    cursor: pointer;
+}
+
+.menu{
+    position: absolute;
+}
+/*
+
+aside{
+    background: rgb(25, 25 25);
+    height: 500px;
+    float: left;
+    list-style: none;
+    margin: 1px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+    line-height: 30px;
+    color: white;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    margin: 1px;
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+    line-height: 30px;
+    color: white;
+}
+#container a{
+    color: blue;
+}
+#container a:hover{
+    color:rgb(0, 0, 0);
+    transition:.3s;
+}
+*/
+/*.buscar{
+    position: center;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.buscar input{
+    position: center;
+    width: 40%;
+    height: 25px;
+    padding: 0 20px;
+    font-size: 12px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+    color: #000;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 30px;
+    line-height: 0px;
+}
+/*.btn{
+    background: none;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    left: 5px;
+}
+.boton{
+    position: relative;
+    right: 30px;
+}
+*/
+/*.btnBuscar{
+    position: absolute;
+    width: 30px;  
+    left: 972px;
+    height: 30px;
+    top: 313px;
+}
+input[type="submit"]{
+    border-radius: 25px;
+    height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+    line-height: 0px;
+}
+input[type="submit"]:hover{
+    border-color: white;
+    transition: .1s;
+}
+.filtro{
+    
+}
+*/
+
+#busqueda{
+    margin-left: 90px;
+    padding: 1%;
+    width: 400px;
+    height: 25px;
+    position: center;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.buscar{
+    display: flex;
+    justify-content: center;
+}
+
+    .buscar input{
+        width: 160px;
+        height: 25px;
+        padding: 0 20px;
+        font-size: 12px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+        color: #000;
+        outline: none;
+        border: 1px solid silver;
+        border-radius: 30px;
+        line-height: 0px;
+    }
+.btnBuscar{
+    background: rgb(60, 60, 60);
+    width: 100px;  
+    left: 972px;
+    height: 30px;
+    top: 313px;
+    border-radius: 30px;
+}
+.btnBuscar a{
+    color: rgb(200, 200, 200);
+}
+.btnBuscar a:hover{
+    color: #fff;
+    transition: .3s;
+}
+input[type="submit"]{
+    border-radius: 25px;
+    height: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ;
+    line-height: 0px;
+}
+input[type="submit"]:hover{
+    border-color: white;
+    transition: .1s;
+}
+
+.banner{
+    width: 1000px;
+    height: 200px;
+    border: 2px solid black;
+    margin: auto;
+    left: 20px;
+    
+    background-image: url(img/banneruno.png);
+    background-size: 100% 100%;
+
+    animation: banner 10s infinite;
+}
+
+@keyframes banner{
+    1%, 35% {
+        background-image: url(img/banneruno.png);
+    }
+
+    38%, 70% {
+        background-image: url(img/bannerdos.png);
+    }
+    
+    73%, 98% {
+        background-image: url(img/bannertres.png);
+    }
+}
+
+.juegos{
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+ }
+ .juego{
+     width: 250px;
+     position: static;
+     margin-top: 15px;
+     border: 1.5px solid black;
+     background-color: #ffc0cb;
+     margin-left: 15px;
+     height: 350px;
+     background-size: 100% 100%;
+ }
+ .juego label{
+    color: white;
+    position: static;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-top: 5px;
+ }
+ .juego:hover{
+    width: 270px;
+    height: 380px;
+    transition:.3s;
+ }
+
+
+footer{
+    position: relative;
+    right: 8px;
+    top: 708px;
+    width: 1348px;
+    height: 250px;
+    background: rgb(14, 14, 14);
+ }
+ footer h2{
+    color: rgb(92, 88, 88);
+    text-align: center;
+    position: relative;
+    top: 10px;
+ }
+ footer .ig{
+    position: relative;
+    height: 30px;
+    left: 575px;
+    width: 50px;
+    top: 10px;
+ }
+ 
+ footer .fc{
+   position: relative;
+   bottom: 20px;
+   height: 20px;
+   width: 50px;
+   left: 640px;
+}
+ 
+footer .redit{
+   position: relative;
+   bottom: 40px;
+   height: 30px;
+   width: 50px;
+   left: 705px;
+}
+footer .copy{
+   position: relative;
+   text-align: center;
+   width: 50px;
+   top: 50px;
+   height: 30px;
+   left: 485px;
+   color: rgb(92, 88, 88);
+   font-size: 18px;
+}
+footer .donar{
+   position: relative;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: rgb(92, 88, 88);
+   border-bottom: blanchedalmond;
+   text-align: center;
+   left: 150px;
+   top:80px;
+}
+footer .panas{
+   position: relative;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   color: rgb(92, 88, 88);
+   border-bottom: blanchedalmond;
+   text-align: center;
+   left: 200px;
+   top:80px;
+}
+footer a{
+   color: rgb(92, 88, 88);
+}
+
+
